@@ -1,0 +1,310 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url(imagenes/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+main {
+    max-width: 1200px;
+    margin: 80px auto 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header h1 {
+    text-align: center;
+    color: rgb(17, 207, 17);
+    padding: 15px;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: #263e58;
+    color: white;
+    border-bottom: 2px solid #003354;
+    flex-wrap: wrap;
+    z-index: 100;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.buscador {
+    display: flex;
+    gap: 0.5em;
+}
+
+.buscador input[type="text"] {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buscador button {
+    padding: 0.5em 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buscador button:hover {
+    background-color: #3a8c40;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 15px;
+    text-shadow: #33a813 1px 1px 1px;
+}
+
+.navbar a:hover {
+    color: rgb(17, 207, 17);
+}
+
+span {
+    font-weight: bold;
+}
+
+main div {
+    margin: 15px 0;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(26, 188, 156, 0.9), rgba(22, 160, 133, 0.9));
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.div2 {
+    margin: 15px 0;
+    padding: 20px;
+    background-color: rgba(24, 214, 128, 0.929);
+    border-radius: 8px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+main p, main li {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+main ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+main li {
+    margin-bottom: 8px;
+}
+
+/* Personalización de la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    main {
+        font-size: 0.7em;
+    }
+
+    header {
+        font-size: 0.7em;
+    }
+
+    
+    
+}
+.Inicio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Añade 20px de espacio entre el video y el texto */
+    background-color: rgba(11, 228, 123, 0);
+    
+}
+
+.video {
+    flex: 1; /* El video ocupa 1 parte del espacio disponible */
+    padding-right: 20px; /* Añade un poco de espacio a la derecha del video */
+}
+
+.texto{
+    flex: 1; /* El texto ocupa 1 parte del espacio disponible */
+}
+
+.mensaje{
+    text-align: center;
+    font-size: 20px;
+}
+.eslogan{
+    text-align: center;
+    font-size: 3em;
+    color: #ffffff;
+    text-shadow: 1px 2px 2px black;
+}
+.mainInicio{
+    background: linear-gradient(135deg, rgba(26, 188, 156, 0.9), rgba(22, 160, 133, 0.9));
+    width: 100%; 
+}
+
+.hero-section {
+    text-align: center;
+    padding: 8rem 2rem;
+    background: none;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in;
+    height: 100%;
+}
+
+.hero-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: none;
+}
+
+.hero-section h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    animation: slideInLeft 1s ease-out;
+}
+
+.hero-section p {
+    font-size: 1.6rem;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    font-weight: 300;
+    animation: slideInRight 1s ease-out;
+}
+
+.hero-section .creator-container {
+    position: relative;
+    display: inline-block;
+
+}
+.creator-container{
+    background: none;
+}
+
+.hero-section .creator-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: #ddd;
+    margin: 2rem auto;
+    border: 10px solid #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    object-fit: cover;
+}
+
+.hero-section .creator-img:hover {
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .creator-name {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 1.5rem 0 2.5rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    letter-spacing: 1px;
+    animation: bounceIn 1s ease-out 0.5s both;
+}
+
+.hero-section .video-placeholder {
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    background: #ddd;
+    margin: 2rem auto;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.4s ease;
+}
+
+.hero-section .video-placeholder:hover {
+    transform: scale(1.02);
+}
+
+.hero-section .explore-btn {
+    display: inline-block;
+    padding: 1.2rem 3rem;
+    background: #fff;
+    color: #1abc9c;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 35px;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section .explore-btn:hover {
+    background: #1abc9c;
+    color: #fff;
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+
+
